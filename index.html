@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home Page</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- Data Table CDN -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css">
+    <link href="https://uoanbar.edu.iq/myuoa/css/layout-style.css" rel="stylesheet">
+    <link href="https://uoanbar.edu.iq/myuoa/css/my-style.css" rel="stylesheet">
+    <!-- My custom CSS By Pro-Ahmed Amer -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body dir="rtl">
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="ar-sidebar">
+            <div class="sidebar-header">
+                <h5 class="ar_lang">جامعة الانبار</h5>
+                <strong>UoA</strong>
+            </div>
+            <ul class="list-unstyled components">
+                <li>
+                    <!-- Homepage icons-->
+                    <a href="https://uoanbar.edu.iq/myuoa/student">
+                        <i class="fas fa-home" id="main-page"></i> &nbsp;الصفحة الرئيسية
+                    </a>
+                    <!-- Student result icons-->
+                    <a href="https://uoanbar.edu.iq/myuoa/student/results">
+                        <i class="far fa-file-alt"></i> النتيجة
+                    </a>
+                    <!-- My Account icons-->
+                    <a href="#myAccount" data-toggle="collapse" aria-expanded="false" aria-haspopup="true" class="ar-dropdown-toggle">
+                        <i class="far fa-user"></i> حسابي
+                    </a>
+                    <ul class="collapse list-unstyled" id="myAccount">
+                        <li>
+                            <a href="https://uoanbar.edu.iq/myuoa/student/changePass">تغيير كلمة المرور</a>
+                        </li>
+                        <li>
+                            <a href="https://uoanbar.edu.iq/myuoa/student/logout">تسجيل الخروج</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- Page Content  -->
+        <div id="content">
+            <!--Top nave bar   -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button type="button" id="ar-sidebarCollapse" class="btn btn-info">
+                         <i class="fas fa-align-right"></i>
+                    </button>
+                </div>
+                <div class="col-sm-8 center">
+                    <h5 class="txt-bold" style="margin-top: 10px;">احمد عامر احمد عبد الرزاق</h5>
+                    <h6>كلية علوم الحاسوب وتكنولوجيا المعلومات - قسم نظم المعلومات</h6>
+                </div>
+                <div class="col-sm-2 center">
+                    <img src="https://uoanbar.edu.iq/myuoa/images/Ulogo.png" class="center-block header-img img-responsive" width="60" height="auto">
+                </div>
+            </nav>
+            <!-------  "Action success_msg" , messages presented" ------------------------------------>
+            <!-------  "Action fail_msg" , messages presented" ------------------------------------>
+            <!-------  "Action warning_msg" , messages presented" ------------------------------------>
+            <!-- Pages Content goes here-->
+            <h4 class="text-center"><span>الصفحة الرئيسية</span></h4>
+            <br><br>
+            <div class="row text-center mrgn-center">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <button class="disabled btn btn-info center btn-padding btn-margin btn-style">  
+                        <span class="text-center fix-spans"> 
+                            <span class="span-style">الأقسام الداخلية</span>
+                            <br><br>
+                            <i class="far fa-building fa-4x"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <form action="https://uoanbar.edu.iq/myuoa/student/results">
+                        <button class="btn btn-info center btn-padding btn-margin btn-style" type="submit">  
+                            <span class="text-center fix-spans"> 
+                                <span class="span-style">النتيجة</span>
+                                <br><br>
+                                <i class="fas fa-file-alt fa-4x"></i>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <button class="disabled btn btn-info center btn-padding btn-margin btn-style">  
+                        <span class="text-center fix-spans"> 
+                            <span class="span-style">التأييدات والوثائق</span>
+                            <br><br>
+                            <i class="fas fa-certificate fa-4x"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <form target="_incognito" action="https://uoanbar.edu.iq/mansa/index.php">
+                        <button class=" btn btn-info center btn-padding btn-margin btn-style" type="submit">  
+                            <span class="text-center fix-spans"> 
+                                <span class="span-style">المنصة العلمية</span>
+                                <br><br>
+                                <i class="fas fa-book fa-4x"></i>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="row text-center mrgn-center">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <button class="btn btn-info center btn-padding btn-margin btn-style">  
+                        <span class="text-center fix-spans"> 
+                            <span class="span-style">النشاطات والاعلانات</span>
+                            <br><br>
+                            <i class="fas fa-bullhorn fa-4x"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <form target="_incognito" action="https://mail.google.com/a/uoanbar.edu.iq">
+                        <button class="disabled btn btn-info center btn-padding btn-margin btn-style" type="submit">  
+                            <span class="text-center fix-spans"> 
+                                <span class="span-style">البريد الالكتروني</span>
+                                <br><br>
+                                <i class="far fa-envelope fa-4x"></i>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <form target="_incognito" action="https://classroom.google.com/">
+                        <button class=" btn btn-info center btn-padding btn-margin btn-style">  
+                            <span class="text-center fix-spans"> 
+                                <span class="span-style">صفي</span>
+                                <br><br>
+                                <i class="fas fa-chalkboard fa-4x"></i>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <button class="disabled btn btn-info center btn-padding btn-margin btn-style">  
+                        <span class="text-center fix-spans"> 
+                            <span class="span-style">حسابي</span>
+                            <br><br>
+                            <i class="far fa-user fa-4x"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="sticky-footer" class="py-3 bg-dark text-white-50">
+        <div class="container text-center">
+            <small> جميع الحقوق محفوظة &copy; جامعة الانبار - مركز الحاسبة الالكترونية </small>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <!-- Data Table CDN JS -->
+    <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://uoanbar.edu.iq/myuoa/js/myjs.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
